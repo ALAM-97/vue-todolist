@@ -33,11 +33,11 @@ const app = new Vue({
         removeGoal: function(index) {
             this.todos.splice(index, 1);
         },
-        isDone: () => {
-            if (this.todos[0].done == false) {
-                console.log("si")
+        isDone: function(index) {
+            if (this.todos[index].done == false) {
+                this.todos[index].done = true;
             } else {
-                console.log("no")
+                this.todos[index].done = false;
             }
         }
     },

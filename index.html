@@ -35,7 +35,8 @@
                     <ul>
                         <li v-for="(todo, index) in todos">
                             {{todo.goal}}
-                            <div class="done" @click="isDone()"></div>
+                            <div v-if="todo.done == false" class="done red" @click="isDone(index)"></div>
+                            <div v-else class="done green" @click="isDone(index)"></div>
                             <i class="fas fa-times" @click="removeGoal(index)"></i>
                         </li>
                     </ul>
