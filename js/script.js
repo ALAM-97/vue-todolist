@@ -14,13 +14,25 @@ const app = new Vue({
             {
                 goal: "Fare il bucato",
                 done: false
-            }
+            },
         ],
-        todoIndex: 0
+        addTodo: '',
     },
     methods: {
-        prova: function() {
-            console.log(this.todos[0].goal);
-        }
+        pushGoal: function() {
+            if (this.addTodo != "") {
+                this.todos.push(
+                    {
+                        goal: this.addTodo,
+                        done: false
+                    }
+                )
+            this.addTodo = ''
+            }
+        },
+        removeGoal: function(index) {
+            this.todos.splice(index, 1);
+        },
+        
     },
 })

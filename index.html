@@ -27,15 +27,16 @@
 
             <main>
                 <section class="input-sec">
-                    <input type="text" placeholder="Nuovo To Do" minlength="5" maxlength="35">
-                    <button @click="prova()">Aggiungi</button>
+                    <input type="text" placeholder="Nuovo To Do" minlength="3" maxlength="35" v-model="addTodo" v-on:keyup.enter="pushGoal()">
+                    <button @click="pushGoal()">Aggiungi</button>
                 </section>
 
                 <section class="todo-list">
                     <ul>
-                        <li v-for="goal in todos">
-                            <div class="done"></div>
-                            <i class="fas fa-times"></i>
+                        <li v-for="(todo, index) in todos">
+                            {{todo.goal}}
+                            <div class="done" @click="isDone()"></div>
+                            <i class="fas fa-times" @click="removeGoal(index)"></i>
                         </li>
                     </ul>
                 </section>
