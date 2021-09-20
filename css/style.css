@@ -3,7 +3,67 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* MAIN */
+
+/* COMMON */
 body {
     font-family: 'Roboto', sans-serif;
+}
+
+/* HEADER */
+header img {
+    display: flex;
+    justify-content: center;
+}
+img {
+    width: 25%;
+    margin: 30px auto;
+}
+
+/* MAIN */
+/* input section */
+.input-sec {
+    text-align: center;
+    margin-top: 50px;
+}
+input {
+    width: 350px;
+}
+input,
+button {
+    padding: 10px 10px;
+    border-radius: 7px;
+}
+
+/* todo-list */
+.todo-list {
+    max-width: 1200px;
+    background-color: #ddd;
+    margin: 50px auto;
+    padding: 15px;
+    
+}
+li {
+    display: flex;
+    padding: 10px 15px;
+    list-style: none;
+    border-bottom: 1px solid #000;
+}
+li:hover {
+    background-color: #eee;
+}
+i {
+    margin-left: 20px;
+    font-size: 1.3rem;
+    color: #000;
+}
+i:hover {
+    color: red;
+}
+.done {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: red;
+    margin-left: auto;
 }

@@ -19,11 +19,35 @@
     <title>To Do List</title>
 </head>
     <body>
-        
+
+        <header>
+            <img src="img/logo.png" alt="Boolean-Logo">
+        </header>
+
+        <main>
+            <section class="input-sec">
+                <input type="text" placeholder="Nuovo To Do" minlength="5" maxlength="25">
+                <button>Aggiungi</button>
+            </section>
+
+            <section class="todo-list">
+                <ul>
+                    <li>Fare la spesa
+                        <div class="done"></div>
+                        <i class="fas fa-times"></i>
+                    </li>
+                    <li>Fare la spesa
+                        <div class="done"></div>
+                        <i class="fas fa-times"></i>
+                    <li>Fare la spesa
+                        <div class="done"></div>
+                        <i class="fas fa-times"></i>
+                    </li>
+                </ul>
+            </section>
+        </main>
 
 
-
-        
         <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
         <script src="js/script.js"></script>
     </body>
