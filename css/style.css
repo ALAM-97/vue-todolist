@@ -75,3 +75,9 @@ i:hover {
 .done.green {
     background-color: green;
 }
+.fa-smile-beam {
+    margin-left: 0;
+}
+h3 {
+    text-align: center;
+}
